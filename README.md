@@ -1,6 +1,6 @@
 将此代码放在根目录下，即可生成该文件目录结构表
 <pre><code>
-<?php
+
 function scanFile($dir){
     if(strstr($dir,".") || !is_dir($dir)){
       //含有“.”的文件基本是不需要的，所以没有输出，可根据实际情况修改或删除
@@ -32,5 +32,5 @@ foreach($file as $key => $value){
    // print_r($value);
 }
  printFile($file,0);
-?>
+
 </code></pre>
